@@ -1,12 +1,14 @@
-# Positive outreach replies export
+# Positive WhatsApp replies export
 
-CSV-ul conține acum exact coloanele cerute:
-- numele contactului din exportul intern
-- numele contactului din chatul WhatsApp
-- mesajul real de reply din WhatsApp
+CSV-ul conține reply-urile reale din WhatsApp Business inbox, filtrate să excludă răspunsurile clar negative.
 
-Fișier:
-- `positive_replies_exact_whatsapp_2026-05-07.csv`
+Coloane:
+- `internal_contact_name`
+- `whatsapp_chat_name`
+- `whatsapp_client_reply`
+- `reply_type`
+- `phone`
 
-Notă:
-- acest export include doar contactele care au putut fi potrivite direct cu inboxul WhatsApp Business disponibil prin API în momentul generării.
+Observație:
+- `manual_positive` = răspuns explicit / deschidere / interes / cerere de detalii
+- `auto_reply` = răspuns automat, dar tot semnal pozitiv de contact / disponibilitate
